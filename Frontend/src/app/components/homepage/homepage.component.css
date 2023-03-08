@@ -1,0 +1,33 @@
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+    flex: 0 0 100%;
+  }
+  
+  .form-control {
+    flex: 0 0 100%;
+    margin-bottom: 0.5rem;
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  ul li {
+    margin-bottom: 1rem;
+  }
+  
+  ul li a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  ul li a:hover {
+    text-decoration: underline;
+  }
+  
