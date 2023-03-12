@@ -1,30 +1,40 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
+import { reducers } from './store';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
-import { QuestionListComponent } from './components/question-list/question-list.component';
 import { QuestionDetailComponent } from './components/question-detail/question-detail.component';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { LoginComponent } from './components/login/login.component';
+import { SignupComponent } from './components/signup/signup.component';
+import { StoreModule } from '@ngrx/store';
+import { AskQuestionComponent } from './components/ask-question/ask-question.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
-    QuestionListComponent,
     QuestionDetailComponent,
     UserProfileComponent,
     SearchBarComponent,
-    NavBarComponent
+    NavBarComponent,
+    LoginComponent,
+    SignupComponent,
+    AskQuestionComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    ReactiveFormsModule,
+    FormsModule,
+    StoreModule.forRoot(reducers)
   ],
   providers: [],
   bootstrap: [AppComponent]

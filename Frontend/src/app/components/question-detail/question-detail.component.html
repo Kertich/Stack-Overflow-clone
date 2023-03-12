@@ -1,1 +1,26 @@
-<p>question-detail works!</p>
+<div>
+  <img src="https://img.icons8.com/external-creatype-glyph-colourcreatype/256/external-direction-web-application-v2-creatype-glyph-colourcreatype-2.png">
+  <h2>Question: {{ Questions[0].title }}</h2>
+  <p>{{ Questions[0].body }}</p>
+  <p>{{ Questions[0].id }}</p>
+  <img src="https://img.icons8.com/external-creatype-glyph-colourcreatype/256/external-direction-web-application-v2-creatype-glyph-colourcreatype-17.png">
+  
+</div>
+
+<h3>Answer</h3>
+<!-- <h3>Answers ({{ ANSWERS.length }})</h3> -->
+
+<ul>
+  <li>
+    <div>{{ ANSWERS[0].body }}</div>
+    <div>By {{ ANSWERS[0].user }}</div>
+    <div>Votes: {{ ANSWERS[0].votes }}</div>
+
+     <!-- <button (click)="onVote(answer.id, 'up')">Upvote</button>
+    <button (click)="onVote(answer.id, 'down')">Downvote</button>
+
+    <button *ngIf="!answer.isAccepted" (click)="onAccept(answer.id)">Mark as accepted</button> -->
+    <span *ngIf="ANSWERS[0].isAccepted">Accepted answer</span>
+  </li>
+</ul>
+

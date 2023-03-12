@@ -1,0 +1,32 @@
+.header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .count {
+    color: #777;
+    margin-bottom: 16px;
+  }
+  
+  .question-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .question-item {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px;
+    margin-bottom: 8px;
+    transition: all 0.2s ease;
+  }
+  
+  .question-item:hover {
+    background-color: #e6e6e6;
+  }
+  

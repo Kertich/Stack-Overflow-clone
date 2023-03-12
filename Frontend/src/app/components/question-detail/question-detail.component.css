@@ -1,0 +1,41 @@
+/* Style for the question title and body */
+h2 {
+    font-size: 24px;
+    margin: 20px 0 10px;
+  }
+  img{ 
+    width: 50px;
+   }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the answer */
+  li {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  li div {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  li div:first-child {
+    font-weight: bold;
+  }
+  
+  li div:last-child {
+    font-style: italic;
+  }
+  
+  li span {
+    font-size: 16px;
+    color: green;
+    margin-left: 10px;
+  }
+  

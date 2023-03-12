@@ -1,0 +1,69 @@
+nav ul {
+    list-style: none; /* removes the bullet points */
+
+    
+}
+  
+  nav li a {
+    color: #999; /* changes the text color to light grey */
+    text-decoration: none; /* removes the underline */
+
+    
+  }
+  .bottom {
+    display: flex;
+  }
+  .buttons-down{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+  }
+  .description{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  input{
+    height: 90px;
+    margin: 40px;
+    display: flex;
+    flex: 1;
+    width: 90%;
+  } 
+  label{
+    display: flex;
+    margin: 20px;
+  }
+  .buttons-down-1{
+    margin-right: 10px;
+  }
+ 
+  nav {
+    display:flex;
+    /* gap: 5px; */
+    /* flex-direction: column; */
+    
+  }
+  .top{
+    display: flex;
+  }
+  .pfile{
+    width: 80px;
+  }
+  .left-icon{
+    display: flex;
+  }
+  .one img, .two img, .three img {
+    width: 20px;
+  }
+  .one, .two, .three {
+    display: flex;
+  }
+  .iconNdesc{
+    display: flex;
+    margin: 10px;
+  }
+  button{
+    margin: 10px;
+  }

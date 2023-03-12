@@ -1,1 +1,11 @@
-<p>question-list works!</p>
+<h2 appHighlight>All questions</h2>
+<h2>23,544,241 questions</h2>
+
+<ul>
+    <li *ngFor="let question of questions$ | async" appHighlight>
+      {{ question.title }}
+      {{ question.body }}
+    </li>
+  </ul>
+  
+<!-- (click)="onDeleteQuestion(question.id)" -->

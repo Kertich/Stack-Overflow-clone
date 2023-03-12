@@ -12,6 +12,7 @@ export class AskQuestionComponent {
   tried: string = '';
   expecting: string = '';
   tags: string = '';
+  answers!: []
 
   onSubmit() {
     const question: Question = {
@@ -19,7 +20,8 @@ export class AskQuestionComponent {
       title: this.title,
       body: this.details,
       tags: this.tags.split(','),
-      created_at: new Date()
+      created_at: new Date(),
+      answers: this.answers
     };
     
     // TODO: send question to backend API to save in database
