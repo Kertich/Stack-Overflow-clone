@@ -1,0 +1,31 @@
+<h2>Ask a Question</h2>
+
+<form>
+  <div class="form-group">
+    <label for="title">Title:</label>
+    <input type="text" id="title" name="title" class="form-control" [(ngModel)]="title">
+  </div>
+
+  <div class="form-group">
+    <label for="details">Details:</label>
+    <textarea id="details" name="details" class="form-control" [(ngModel)]="details"></textarea>
+  </div>
+
+  <div class="form-group">
+    <label for="tried">What I've Tried:</label>
+    <textarea id="tried" name="tried" class="form-control" [(ngModel)]="tried"></textarea>
+  </div>
+
+  <div class="form-group">
+    <label for="expecting">What I'm Expecting:</label>
+    <textarea id="expecting" name="expecting" class="form-control" [(ngModel)]="expecting"></textarea>
+  </div>
+
+  <div class="form-group">
+    <label for="tags">Tags:</label>
+    <input type="text" id="tags" name="tags" class="form-control" [(ngModel)]="tags">
+  </div>
+
+  <button type="submit" class="btn btn-primary" (click)="onSubmit()">Post Question</button>
+</form>
+
