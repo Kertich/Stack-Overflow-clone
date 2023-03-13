@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -12,7 +13,7 @@ export class LoginComponent implements OnInit {
   public gitImg = "https://img.icons8.com/fluency-systems-regular/1x/github.png"
   public fbImg = "https://img.icons8.com/color/256/facebook.png"
 
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: FormBuilder, private router: Router) { }
 
   ngOnInit(): void {
     this.loginForm = this.formBuilder.group({
@@ -20,6 +21,10 @@ export class LoginComponent implements OnInit {
       password: ['', Validators.required]
     });
   }
+  // login() {
+  //   // Navigate to the home page
+    
+  // }
 
   onSubmit() {
     if (this.loginForm.invalid) {
@@ -27,5 +32,6 @@ export class LoginComponent implements OnInit {
     }
 
     // Perform login logic here
+    this.router.navigate(['/questionlist']);
   }
 }

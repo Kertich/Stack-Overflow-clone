@@ -5,6 +5,8 @@
     <li *ngFor="let question of questions$ | async" appHighlight>
       {{ question.title }}
       {{ question.body }}
+      {{ question.tags }}
+      {{ question.created_at }}
     </li>
   </ul>
   

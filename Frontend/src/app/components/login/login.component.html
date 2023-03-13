@@ -5,6 +5,9 @@
         
       
       <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div *ngIf="loginForm.dirty && loginForm.invalid" class="red">
+          Please enter a username and password.
+        </div>
         <div class="frm">
         <div class="form-group loginOptions">
           
@@ -28,6 +31,8 @@
           <a href="#">Sign Up</a>
         </div>
       </div>
+
+      
       </form>
       
     

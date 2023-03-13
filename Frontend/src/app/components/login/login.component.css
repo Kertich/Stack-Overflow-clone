@@ -7,6 +7,9 @@
   /* align-items: center; */
   
 }
+.red{
+  color:rgba(255, 30, 0, 0.623)
+}
 .frm{
   padding: 10px;
   width: 100%;

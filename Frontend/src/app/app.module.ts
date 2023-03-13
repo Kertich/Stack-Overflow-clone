@@ -16,6 +16,7 @@ import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { StoreModule } from '@ngrx/store';
 import { AskQuestionComponent } from './components/ask-question/ask-question.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { AskQuestionComponent } from './components/ask-question/ask-question.com
     NavBarComponent,
     LoginComponent,
     SignupComponent,
-    AskQuestionComponent
+    AskQuestionComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -8,17 +8,19 @@ import { QuestionListComponent } from './components/question-list/question-list.
 import { AskQuestionComponent } from './components/ask-question/ask-question.component';
 import { AuthGuard } from './services/auth-guard.service';
 import { QuestionDetailComponent } from './components/question-detail/question-detail.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 
 const routes: Routes = [
-  { path: '', component: HomepageComponent },
-  { path: 'login', component: LoginComponent },
+  { path: 'home', component: HomepageComponent, canActivate: [AuthGuard]},
+  { path: '', component: LoginComponent },
   { path: 'signup', component: SignupComponent},
-  { path: 'userprofile', component: UserProfileComponent},
-  { path: 'questionlist', component: QuestionListComponent},
-  { path: 'questiondetail', component: QuestionDetailComponent},
-  { path: 'question', component: AskQuestionComponent, canActivate: [AuthGuard]}
+  { path: 'userprofile', component: UserProfileComponent, canActivate: [AuthGuard]},
+  { path: 'questionlist', component: QuestionListComponent, canActivate: [AuthGuard]},
+  { path: 'questiondetail', component: QuestionDetailComponent, canActivate: [AuthGuard]},
+  { path: 'question', component: AskQuestionComponent, canActivate: [AuthGuard]},
+ 
 ];
 
 @NgModule({
