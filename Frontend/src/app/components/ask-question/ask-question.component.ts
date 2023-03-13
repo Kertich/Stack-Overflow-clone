@@ -1,9 +1,14 @@
 import { Component } from '@angular/core';
 import { Question } from 'src/app/models/question.model';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-ask-question',
+  standalone: true,
   templateUrl: './ask-question.component.html',
+  imports: [ ReactiveFormsModule, CommonModule, FormsModule],
   styleUrls: ['./ask-question.component.css']
 })
 export class AskQuestionComponent {

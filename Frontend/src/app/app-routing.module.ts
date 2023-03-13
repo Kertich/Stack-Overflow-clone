@@ -9,6 +9,7 @@ import { AskQuestionComponent } from './components/ask-question/ask-question.com
 import { AuthGuard } from './services/auth-guard.service';
 import { QuestionDetailComponent } from './components/question-detail/question-detail.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 
 
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'questionlist', component: QuestionListComponent, canActivate: [AuthGuard]},
   { path: 'questiondetail', component: QuestionDetailComponent, canActivate: [AuthGuard]},
   { path: 'question', component: AskQuestionComponent, canActivate: [AuthGuard]},
+  { path: '**', component: PageNotFoundComponent }
  
 ];
 

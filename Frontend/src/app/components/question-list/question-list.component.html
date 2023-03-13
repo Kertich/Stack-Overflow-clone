@@ -1,5 +1,16 @@
-<h2 appHighlight>All questions</h2>
-<h2>23,544,241 questions</h2>
+<div class="cat">
+  <div class="one">
+    <h2 appHighlight>All questions</h2>
+    <h2>23,544,241 questions</h2>
+  </div>
+  <div class="two">
+    <button (click)="goToComponent2()" class="ask-question">Ask a Question</button>
+  </div>
+</div>
+
+
+
+
 
 <ul>
     <li *ngFor="let question of questions$ | async" appHighlight>

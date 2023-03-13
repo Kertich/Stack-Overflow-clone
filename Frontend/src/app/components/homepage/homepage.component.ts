@@ -8,6 +8,7 @@ interface Question {
 @Component({
   selector: 'app-homepage',
   templateUrl: './homepage.component.html',
+  standalone: true,
   styleUrls: ['./homepage.component.css']
 })
 export class HomepageComponent {

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
+import { Router } from '@angular/router';
 // import { HighlightDirect } from '../../directives/highlight.directive'
 
 import { CommonModule } from '@angular/common';
@@ -23,7 +24,7 @@ export class QuestionListComponent implements OnInit {
 
   questions$!: Observable<Question[]>;
 
-  constructor(private store: Store<AppState>) {}
+  constructor(private store: Store<AppState>, private router: Router) {}
 
   ngOnInit() {
     this.questions$ = this.store.select(state => state.questionState.questions);
@@ -32,5 +33,8 @@ export class QuestionListComponent implements OnInit {
 
   onDeleteQuestion(id: number) {
     this.store.dispatch(deleteQuestion({ id: id }));
+  }
+  goToComponent2() {
+    this.router.navigate(['/question']);
   }
 }

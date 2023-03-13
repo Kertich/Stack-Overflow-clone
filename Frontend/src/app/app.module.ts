@@ -17,19 +17,13 @@ import { SignupComponent } from './components/signup/signup.component';
 import { StoreModule } from '@ngrx/store';
 import { AskQuestionComponent } from './components/ask-question/ask-question.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomepageComponent,
-    QuestionDetailComponent,
-    UserProfileComponent,
-    SearchBarComponent,
-    NavBarComponent,
-    LoginComponent,
-    SignupComponent,
-    AskQuestionComponent,
-    FooterComponent
+    PageNotFoundComponent,
+    
   ],
   imports: [
     BrowserModule,
