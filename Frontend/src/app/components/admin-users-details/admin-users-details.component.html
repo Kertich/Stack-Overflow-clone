@@ -1,0 +1,22 @@
+<h1>Admin Page</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>No of Questions</th>
+          <th>No of Answers</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let row of rows">
+          <td>{{ row.id }}</td>
+          <td>{{ row.name }}</td>
+          <td>{{ row.numQuestions }}</td>
+          <td>{{ row.numAnswers }}</td>
+          <td><button (click)="deleteRow(row.id)">Delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+ 

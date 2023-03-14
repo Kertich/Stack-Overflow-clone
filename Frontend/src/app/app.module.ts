@@ -3,6 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
 import { reducers } from './store';
+import { RouterModule, Routes } from '@angular/router';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -18,11 +19,13 @@ import { StoreModule } from '@ngrx/store';
 import { AskQuestionComponent } from './components/ask-question/ask-question.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { AdminUsersDetailsComponent } from './components/admin-users-details/admin-users-details.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    PageNotFoundComponent,
+   
+
+    
     
   ],
   imports: [
